@@ -1,4 +1,4 @@
-public class Circle{
+public class Round{
 
     final static int N = 3;
     static double min = 1000;              //the min length
@@ -40,7 +40,7 @@ public class Circle{
      *      那也可以依次推出可能第三个，第四个...的边界超过了第一个圆的边界，右边同理，所以需要每一个都做一下比较
      *      但是可以放心，x是按圆当前排列顺序放置圆心坐标的
      */
-    public static void compute(){       //because only exchange the r, not x
+    public static void compute(){
         double  low = 0, high = 0;
         for (int i = 0; i < N; i++) {
             if(x[i]-r[i] < low){

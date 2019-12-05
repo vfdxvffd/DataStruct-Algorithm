@@ -1,5 +1,9 @@
 import java.util.HashMap;
 
+/**
+ * 还有个问题是存在多个最优解的时候，由于map的特性，只能保存一个，可以考虑替换为mutilmap
+ */
+
 public class Package {
     //0-1背包问题，回溯解法
     final static int N = 5;

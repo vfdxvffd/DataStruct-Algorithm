@@ -55,6 +55,5 @@ public class Empress {
 
     public static void main(String[] args) {
         backtrack(0);
-        Print();
     }
 }
