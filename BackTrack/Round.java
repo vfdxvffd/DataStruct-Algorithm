@@ -63,14 +63,14 @@ public class Round{
         if(t == N){
             compute();
         }
-        for (int i = t; i < N; i++) {           //before i, the r[0]-r[i], we have already sorted
+        for (int i = t; i < N; i++) {           //before i, the r[0]->r[i], we have already sorted
             swap(r,t,i);
             double centerx = center(t);
             if(centerx+r[i] < min){
                 x[t] = centerx;
                 backtrack(t+1);
             }
-            swap(r,t,i);                        //return before
+            swap(r,t,i);                        //恢复交换之前的
         }
     }
 
